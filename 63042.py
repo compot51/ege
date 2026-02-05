@@ -49,3 +49,4 @@ with open("input.txt", "r") as f:
         print('-----------------------------------------------------------------------')
 
 print(cnt_a + len(a), 712 - cnt_a - cnt_b - len(a) - len(b))
+
