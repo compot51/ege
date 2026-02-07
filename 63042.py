@@ -29,7 +29,7 @@ with open("input.txt", "r") as f:
                 flag = 1
             elif choice == 1 and len(a) == 12:
                 flag = 1
-            elif choice == 0 and len(a) < 12 and len(a) < len(b):
+            elif choice == 0 and len(a) < 12 and len(a) <= len(b):
                 time_free = time_in_queue + a[len(a) - 1]
                 a.append(time_free)
             elif choice == 0 and len(b) < 12 and len(b) < len(a):
@@ -49,4 +49,3 @@ with open("input.txt", "r") as f:
         print('-----------------------------------------------------------------------')
 
 print(cnt_a + len(a), 712 - cnt_a - cnt_b - len(a) - len(b))
-
